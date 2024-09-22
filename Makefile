@@ -1,4 +1,6 @@
-all:
+all: clean build
+
+build:
 	harp _harp tmp
 	cp -R tmp/ .
 	rm -rf ./tmp/
